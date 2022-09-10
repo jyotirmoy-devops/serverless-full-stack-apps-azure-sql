@@ -11,7 +11,8 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'azure-static-web-app/api/python'   # set this to the path to your web app project, defaults to the repository root
-  PYTHON_VERSION: '3.8.x'                 # set this to the python version to use (supports 3.6, 3.7, 3.8)
+  PYTHON_VERSION: '3.8.x'
+  skip_deploy_on_missing_secrets: true              # set this to the python version to use (supports 3.6, 3.7, 3.8)
 
 
 jobs:
